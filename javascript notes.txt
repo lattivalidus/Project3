@@ -39,3 +39,29 @@ can also us <= and >= (less than and equal to or greater than or equal to)
 && is logical and so
 if (a==b && c==d)
 if (a==b || c==d) // the || is for "or"
+
+condition ? true:false
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
