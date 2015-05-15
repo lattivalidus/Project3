@@ -1,0 +1,41 @@
+if you put the javascript in the head it will run before the page loads. 
+
+javascript will appear as soon as the page encounters it. so the position is important as it can run either before or after the page runs. 
+
+fills out a form or moves their mouse. Run this in response to a certain event...
+
+
+can put javascript in a separate file - myscript.js
+<script src="myscript.js"> </script> - same rules as for another link, image, etc...if you leave the type attribute off it will be recognized as javascript. 
+
+probably don't watt to put the script tag in the head, unless you are using it to create page content. usually want them in the body at the very bottom before the </body> tag. 
+
+Keeping track of variables
+variable is a container
+use the word "var" and the word you want (the variable itself can be whatever you want but no spaces, can use letters, numbers, underscore, and dollar sign.)
+
+until variable has a value it will be undefined
+var year;
+year=2011;
+or
+var year=2011; \\this is to set the variable and define it in one line. still case sensitive
+
+if you are creating multiple variable that you don't want defined you can add them all 
+var year, time, date;
+similarly to add values you can do
+var year=2011, time=3, date=21;
+
+can also store boulean values which is either "true" or "false" \\must be lower case
+
+if (condition) {code}; \\if statement, must be true or false
+== is considered equality if you use = it will set a value \\ single = are for assignments 
+!= is not equal
+
+can follow with "else" can also nest all of this
+
+=== is strict equality
+can also us <= and >= (less than and equal to or greater than or equal to)
+
+&& is logical and so
+if (a==b && c==d)
+if (a==b || c==d) // the || is for "or"
