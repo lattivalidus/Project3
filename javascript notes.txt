@@ -43,17 +43,70 @@ if (a==b || c==d) // the || is for "or"
 condition ? true:false
 
 
+use console.log can be for developers only and help understand the code better
+can also use .warn, .error, .info, will have different icons appear in the console, as used in firebug
 
+creating loops, aka iteration. Looping is easy, figuring out how to stop is the hard part
 
+"while" is the loop statement, as opposed to "if"
 
+do/while statements while always happen once
+do{statement}while(variable) checks condition statement before starting the loop
 
+before setting up the loop you use an index like var a=1;
+then there is someting to check the condition, and then an increment index (a++)
 
+"for" loop for(vari=1; i<10; i++) //this puts everything about the loop at the very top
 
+"break" will immediately take you out of the loop
 
+continue // done with iteration. so the loop will continue (as opposed to break) but it will stop where you are in the set of instructions and go back to the top to continue processing
 
+empty paretheses in a function means that there won't be any information passed into it
+function ILoveFunctions() // this will not have information passed into it
 
+functions only run when you call it
+best practice to put your javaScript functions at the top of your file
 
+if you drop extra parameters in your code for functions anthing you don't include will be undefined
 
+declaring a variable within parameters of a function, its a local variable so you can't use it in another function unless you define it outside of the parameters of a specific function
+
+array is a single variable that holds multiple values // use "[]" use a zero based index (start with 0 instead of 1) if you use commas to separate the values it will automatically assign them starting at "0"
+
+arrays are objects, and are dynamic
+
+length value will tell you how many items are in it,so anything .length will tell you how many variables or values are within whatever you are inquiring
+
+var myArrayOfLinks = document.getElementsByTagName("a"); //brings all "a" tags or creates a list of links ("a" tags)
+
+JavaScript numbers are 64-bit floating point numbers
+If you try to multiply a number by a string, you will get "NaN" which is "not a number"
+
+if (isNaN(function)){console.log("its not a number!");}
+if (!isNaN(functionName)){console.log("it is a number!");} //to know if it is a number you have to do a doulbe negative
+
+Math.round(); // rounds a number
+Math.max() // returns largest number
+Math.min() // returns smallest number
+Math.random() // duh
+
+use a \ to ignore quotes in a variable
+"this is how, "
+
+can use .split to separate values into an array with " " or "," or however you want it split
+
+working with dates
+.getTime is the best for comparisons
+
+new Object //creates a new object to hold information
+object.variable="name"
+
+DOM - Document Object Model
+
+document.getElementById("someId"); // this is how you grab ids from html to work with them. CANNOT DO THIS WITH CLASSES!!! now using IDs kind of makes sense, where I wondered why we didn't use classes all the time just in case we wanted to apply them later or something. This creates a handle into the document at whatever place your ID is. 
+
+document.getElementsByTagName("li") // grabs the tag name "li" and creates an array with all of the information in it
 
 
 
