@@ -108,10 +108,47 @@ document.getElementById("someId"); // this is how you grab ids from html to work
 
 document.getElementsByTagName("li") // grabs the tag name "li" and creates an array with all of the information in it
 
+use set attribute to affect divs in different ways like moving text to the align right
+
+var mainContent=document.getElementById("mainContent"); // This pulls the id, and creates a handle to manipulate using javaScript
+mainContent.setAttribute("align","right"); // Set attribute allows us to play with it. the first element is what you are doing, and the second specifies
+
+var mainTitle=document.getElementById(mainTitle); //making a handle to manipulate. this would be the way to dump html in your document. 
+
+creating dom elements
+create element, then add it to the document
+var myNewElement=document.createElement("li"); //creates a new list item
+myElement.appendChild(myNewElement); //this sets it within the unordered list
+var myText-document.creatTextNode("new list item text");
+myNewElement.appendChild(myText); //adds text to the element we have created?
+
+appendChild will always add to the end. can also use .insertBefore so long as you specify the tag that you want to put before
 
 
+Events:
 
+myelement.onclick=function() {}; // annonymous function, don't need a name because we already say when this function will run (onclick). don't forget the semicolon!!!
 
+document.addEventLIstener('click', myFunction, false); // what listener and the function to look for. can add one event and multiple listeners. can also do removeEventListener. IE 8 and previous does not have this function!!! if you use this you will need to write code to see if this exists. for previous to IE8 use .attachEvent.
+
+window is the top element of the page you are looking at
+window.onload=function(){
+prepareEventHandlers();
+}; //create a var called prepareEventHandlers(doesn't have to be that name specifically)
+
+use .value for any form field when using .onfocus or .onblur
+
+setTimeout (function, time in milliseconds);
+
+setInterval(changeImage, time in milliseconds); // will need to create a var for changeImage
+varImageArray=["image1.jpg","image2.jpg"];
+varImageIndex=0;
+
+function changeImage(){
+myImage.setAttribute("src",imageArray[imageIndex]);
+imageIndex++;
+if (imageIndex>=imageArray.length{imageInex=0;}}
+setInterval(changeImage,5000); //changes image every 5 seconds
 
 
 
