@@ -150,8 +150,12 @@ imageIndex++;
 if (imageIndex>=imageArray.length{imageInex=0;}}
 setInterval(changeImage,5000); //changes image every 5 seconds
 
+when using style function in javaScript, anything that had a hyphen in it for css will now use camelCase instead
 
+define functions before they are called
 
+minification tools - Google closure compiler, JSMin
 
+jslint.com - to check quality of javaScript code. will point out everything that isn't perfect
 
 
